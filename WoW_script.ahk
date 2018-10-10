@@ -1,9 +1,11 @@
 
+#NoEnv
+#Warn
 #SingleInstance Force
 SetTitleMatchMode 2
 DetectHiddenWindows off
 
-MsgBox Control+a anytime while running to select where you want to start auto clicking. F1 main script. F2 location finder. F3 Pauses. Esc Terminates.
+MsgBox Control+a anytime while running to select where you want to start auto clicking. F1 main script. F2 Pauses. Esc Terminates.
 
 ^a::
 	MouseGetPos, xa,ya
@@ -27,20 +29,8 @@ F1::
 ;XY pos
 }
 return
-
-F2:: 	;finding locations
-	loop {
-		SetTimer, WatchCursor, 100
-		return
-		WatchCursor:
-		MouseGetPos, xx, yy, id, control
-		WinGetTitle, title, ahk_id %id%
-		WinGetClass, class, ahk_id %id%
-		ToolTip, %xx%`, %yy% ahk_id %id%`nahk_class %class%`n%title%`nControl: %control%
-		return
-		}
 		
-F3::Pause
+F2::Pause
 return
 Esc::ExitApp
 return
