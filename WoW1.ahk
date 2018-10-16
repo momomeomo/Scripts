@@ -1,4 +1,8 @@
+; AHK skeleton focused on detectability using WoW testbed
+; 16/10/2018 d/m/y 
+; final iteration
 
+#KeyHistory 0
 #NoEnv
 #SingleInstance Force
 SetTitleMatchMode, 2
@@ -6,7 +10,17 @@ DetectHiddenWindows, off
 ListLines, off
 
 
-MsgBox,,Cords,Control+a set`nF1 execute F2 pause Esc exit, 1.25
+OnExit("ExitFunc")
+
+ExitFunc(ExitReason, ExitCode)
+{
+    if ExitReason not in Logoff,Shutdown
+    {
+	SoundBeep
+    }
+}
+
+MsgBox,,Cords,Control+a set`nF1 execute F2 pause Esc exit`nSends 'g' repeatedly`nconfirmation beep on exit, 3.50
 
 ^a:: ;control+a
 	WinActivate, Program Manager
