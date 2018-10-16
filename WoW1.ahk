@@ -69,3 +69,4 @@ F2::Pause
 return
 Esc::ExitApp
 return
+;END;
