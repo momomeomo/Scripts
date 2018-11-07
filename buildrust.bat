@@ -1,13 +1,11 @@
 @echo off
-REM batch file for quickly interpreting source files
-REM EXAMPLE
-REM 	cd C:\Users\momom\Desktop\rust\
-REM 	rustc test.rs
-REM 	.\meme1.exe
 
 
 :start
 
+	REM cd C:\Users\momom\Desktop\rust\
+	REM rustc test.rs
+	REM .\meme1.exe
 cd 
 rustc 
 .\
