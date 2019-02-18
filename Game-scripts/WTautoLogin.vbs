@@ -1,3 +1,5 @@
+' War thunder auto login script every 24 hours
+
 Dim ObjShell
 Set ObjShell= CreateObject("WScript.Shell")
 
