@@ -1,5 +1,6 @@
 
-'     ObjShell.SendKeys "{ENTER}"
+Option explicit 
+
 Option explicit 
 
 Dim ObjShell 
@@ -11,3 +12,4 @@ ObjShell.Run chr(34) & "C:\Program Files\NVIDIA Corporation\Control Panel Client
 objShell.AppActivate "NVIDIA"
 Wscript.Sleep 69
 ObjShell.Run chr(34) & "C:\Program Files (x86)\MSI Afterburner\MSIAfterburner.exe" & chr(34)
+
