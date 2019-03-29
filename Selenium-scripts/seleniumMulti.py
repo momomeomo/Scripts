@@ -1,4 +1,4 @@
-
+﻿
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,7 +17,7 @@ driver.set_window_size(800,800)
 driver.set_window_position(0,0)
 print("Setup complete")
 
-driver.get ('https://textfree.us')
+driver.get ('')
 
 wait = input("PRESS ENTER TO CONTINUE") #assigns random unused variable pauses execution till anything is taken
 print("Starting")

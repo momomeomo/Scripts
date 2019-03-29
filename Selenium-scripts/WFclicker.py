@@ -35,3 +35,5 @@ for x in range(0,len(meme)):
 	# driver.find_element_by_xpath("//div[class='twitchLive']").click()
 # except:
 	# print("xpath not found")
+
+# scans warframe website and clicks all partnered streamers

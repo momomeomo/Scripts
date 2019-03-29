@@ -3,11 +3,7 @@ from pynput.keyboard import Key, Controller
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
-from tkinter import *
-from tkinter import messagebox
-import time
-import datetime as dt
-from datetime import *
+
 #
 #keyboard = Controller()
 #
@@ -22,13 +18,13 @@ from datetime import *
 #driver.set_window_position(1000,0)
 #print("Setup complete")
 #
-#driver.get('https://textfree.us')
+#driver.get('')
 #
 #end = input("PRESS ENTER TO meme") #pauses execution till anything is taken
 
-#meme1 = "("
+#meme1 = ""
 #
-#meme = "5555555555"
+#meme = ""
 #
 #try:
 #	driver.find_element_by_id('startNewConversationButton').click()
@@ -63,58 +59,3 @@ from datetime import *
 #	pass
 
 
-
-#try:
-#	driver.find_element_by_id('startNewConversationButton').click()
-#	print("Button found")
-#	driver.implicitly_wait(1)
-#	driver.find_element_by_id('contactInput').clear()
-#	print("Input cleared")
-#	driver.find_element_by_id('contactInput').send_keys("(")
-#	driver.find_element_by_id('contactInput').send_keys(rack14.get())
-#	print("Input Written")
-#	driver.implicitly_wait(1)
-#	driver.find_element_by_class_name("emojionearea-editor").click()
-#	driver.find_element_by_class_name("emojionearea-editor").send_keys("")
-#	print("class found")
-#	driver.find_element_by_id('sendButton').click()
-#	print("Sent sms")
-#except:
-#	print("ID not passed")
-#	errorcatch = input("ERROR: make sure your on the correct webpage after logging in, press enter to continue")
-#	pass
-
-now = dt.datetime.now()
-
-#def help_msg():
-#	rack13.config(state='disabled')
-#
-#def Log():
-#	rack13.delete(0, END)
-#	rack13.insert(0, now.hour)
-#	rack13.insert(0, ":")
-#	rack13.insert(0, now.minute)
-#	rack13.config(state='disabled')
-#	
-#main = Tk()
-#main.title("Main")
-#
-#rack13 = Entry(main)
-##rack13.config(state='disabled')
-#rack13.grid(row=3, column=4, pady=4, padx=2)
-#
-#Button(main, text="Help", command=help_msg).grid(row=1, column=0, pady=4)
-#Button(main, text="Log", command=Log).grid(row=1, column=1, pady=4)
-#
-#mainloop()
-
-print("%s-" % now.day)
-print("%s-" % now.month)
-print("%s" % now.year)
-print("  ")
-print("%s:" % now.hour)
-print("%s" % now.minute)
-
-print(now.hour)
-print(":")
-print(now.minute)
