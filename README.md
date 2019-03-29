@@ -1,4 +1,6 @@
 # Scripts
-includes system batch files, python selenium and parsing script, game AHK scripts, menial action scripts
+majority working code, some test and example snippets left in as comment blocks
 
-run batch files as admin
+includes system batch files, python selenium and parsing script, game scripts, menial QOL scripts in a variety of languages
+
+<b>run batch files as admin</b>
