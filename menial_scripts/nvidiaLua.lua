@@ -13,15 +13,29 @@ local script = [[
 if((get-process "RTSS" -ea SilentlyContinue) -eq $Null){
 
 	"MSIAfterburner Not Running"
+	"RTSS not loaded"
 
 
 }	else	{
 
     "MSIAfterburner Running"
+	"RTSS loaded"
+
+ }
+
+if((get-process "NvTelemetryContainer" -ea SilentlyContinue) -eq $Null){
+
+	"NVIDIA containers Not Running"
+
+
+}	else	{
+
+    "NVIDIA containers Running"
 
  }
 
 ]]
+
 -- create powershell process and feed script to its stdin
 local pipe = io.popen("powershell -command -", "w")
 pipe:write(script)
