@@ -10,19 +10,31 @@ end
 -- powershell script
 local script = [[
 
-if((get-process "RTSS" -ea SilentlyContinue) -eq $Null){
+	#check if AfterBurner has started running
+if((get-process "MSIAfterburner" -ea SilentlyContinue) -eq $Null){
 
 	"MSIAfterburner Not Running"
-	"RTSS not loaded"
 
 
 }	else	{
 
     "MSIAfterburner Running"
+
+ }
+
+	#check if RTSS module has started running
+if((get-process "RTSS" -ea SilentlyContinue) -eq $Null){
+
+	"RTSS not loaded"
+
+
+}	else	{
+
 	"RTSS loaded"
 
  }
 
+	#check if nvidia containers are loaded
 if((get-process "NvTelemetryContainer" -ea SilentlyContinue) -eq $Null){
 
 	"NVIDIA containers Not Running"
