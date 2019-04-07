@@ -1,0 +1,1 @@
+-DX11 -anisotropicQualityLevel 0 -cityDensity 0 -fxaa 0 -grassQuality 0 -noInGameDOF -noquattransform -particleQuality 0 -pedLodBias 0 -postFX 0 -reflectionQuality 0 -shaderQuality 0 -shadowQuality 0 -SSAO 0 -texturequality 0 -vehicleLodBias 0 -FrameQueueLimit 0

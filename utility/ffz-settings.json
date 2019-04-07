@@ -1,0 +1,11 @@
+{
+    "version": 1,
+    "script_version": "3.5.466",
+    "aliases": {},
+    "settings": {
+        "advanced_settings": true,
+        "player_stats": -1,
+        "filter_whispered_links": false,
+        "sidebar_hide_promoted_games": true
+    }
+}

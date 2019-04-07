@@ -1,0 +1,1 @@
+-high -tickrate 128 -novid -freq 144 -nosplash -noPause -cpuCount=8
