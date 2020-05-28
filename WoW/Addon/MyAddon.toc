@@ -1,0 +1,7 @@
+## Interface: 
+## Title: MyAddon
+## Notes: personal tracker addon
+## Version: 1
+## Author: momo
+MyAddon.lua
+# Check interface for bfa vs classic and compatibility
