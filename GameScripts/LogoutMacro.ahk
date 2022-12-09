@@ -20,9 +20,9 @@ SetControlDelay, 1
 Logout() {
 	BlockInput on
 	sendinput {esc}
-	MouseClick, left, 959, 432, 1, 1
+	MouseClick, left, 959, 432, 1, 1 ;for 1080p
 	sleep 1
-	MouseClick, left, 959, 432, 1, 1
+	MouseClick, left, 959, 432, 1, 1 ;for 1080p
 	blockinput off
 	return
 }
